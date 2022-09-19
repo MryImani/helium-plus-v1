@@ -1,0 +1,86 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/styles/css/style.css">
+    <link rel="icon" href="../assets/images/logo-tab.svg">
+    <title>Story Writin</title>
+</head>
+
+<body>
+    <header class="header">
+        <figure class="logo">
+            <a href="../Home.html">
+                <img src="../assets/images/Logo-header.svg" alt="" class="logo__shape">
+            </a>
+        </figure>
+
+        <figure>
+            <img src="../assets/images/search-icon.svg" class="search" alt="">
+            <img src="../assets/images/alert-icon.svg" class="alert" alt="">
+            <img src="../assets/images/Avatar-profile.png" class="profile" alt="">
+        </figure>
+
+    </header>
+    <div class="frame">
+        <div class="container">
+            <div class="add-article">
+                <figure>
+                    <img src="../assets/images/add-article-icon.svg" alt="" class="add-article__icon">
+                </figure>
+                <span class="add-article__text">ایجاد مطلب جدید</span>
+            </div>
+            <div class="article-img ">
+                <figure> <img src="../assets/images/uploadimg.svg" alt="" class="article-img__patern"
+                        id="uploadPreview">
+                </figure>
+                <figure><img class="change-style-icon" src="../assets/images/Change Style.svg" alt="">
+                </figure>
+                <figure>
+                    <label for="inp__picture-article"><img class="add-pic-icon" src="../assets/images/addpic.svg"
+                            alt=""></label>
+                    <input type="file" id="inp__picture-article" accept="image/*" class="article-img-input"
+                        onchange="uploadImageArticle()">
+                </figure>
+            </div>
+            <div class="contents">
+                <span class="insert-title">عنوان مطلب خود را وارد کنید</span>
+                <figure>
+                    <img src="../assets/images/addtext.svg" alt="" class="contents__icon">
+                </figure>
+                <span class="insert-caption"> متن اصلی خود را وارد کنید</span>
+                <figure>
+                    <img src="../assets/images/addpic.svg" alt="" class="contents__icon">
+                </figure>
+            </div>
+            <button class="send-article" type="submit" onclick="modul()">انتشار مطلب</button>
+        </div>
+    </div>
+    <footer class="footer">
+
+        <div class="footer-content">
+            <figure class="logo">
+                <img src="../assets/images/Logo-footer.svg" alt="" class="logo__shape">
+
+            </figure>
+            <div class="footer-content__introduction">
+                هلیوم بستری برای به اشتراک گذاری ایده ها و فکر افراد پشرو در زمینه هلم و دانش است. در هلیوم میتوانید به
+                جدیدترین مقالات علمی در کشور دسترسی داشته باشید و خود نیز در ترویج علم و دانش نقشی داشته باشید.
+            </div>
+            <ul class="footer-content__list">
+                <li> بنویسید</li>
+                <li>راهنما</li>
+                <li>معرفی به دوستان</li>
+                <li> قوانین</li>
+            </ul>
+        </div>
+        <img src="../assets/images/Pattern.png" alt="" class="footer__background">
+
+
+    </footer>
+</body>
+<script src="../assets/js/script.js"></script>
+
+</html>
