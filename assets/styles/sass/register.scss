@@ -84,6 +84,13 @@ body{
                 }
 
             }
+            &--span{
+                color: $colorCaption;
+                position: relative;
+                right: 1.5rem;
+                top: -2.5rem;
+    
+            }
             &--input{
                 @include font(400, 1rem, 2rem, 'Kalame_Regular');
                 @include inpStyle;
@@ -96,8 +103,11 @@ body{
                
                 
             }
-            #inp__phone{
+            #inp__phone,#inp__email{
                 text-align: end;
+            }
+            #inp__phone:focus + span , #inp__email:focus + span{
+             opacity: 0;    
             }
             input:focus {
                 outline: none;
@@ -160,43 +170,6 @@ body{
                 word-spacing: 14rem;
             }
 
-
-
-
-
-
-            input[type=email]::-webkit-input-placeholder {
-                word-spacing: 10rem;
-                @media only screen and (max-width: 900px) {
-                   
-                    word-spacing:4rem;
-        
-                }
-               
-                @media only screen and (max-width: 400px) {
-                    font-size: 1rem;
-                    word-spacing: 3rem;
-        
-                }
-                @media only screen and (max-width: 350px) {
-                    font-size: 0.9rem;
-                    word-spacing: 1rem;
-        
-                }
-            }
-            
-            input[type=email]::-moz-placeholder {
-                word-spacing: 8.5rem;
-            }
-             
-            input[type=email]:-ms-input-placeholder {
-                word-spacing: 8.5rem;
-            }
-             
-            input[type=email]:-moz-placeholder {
-                word-spacing: 8.5rem;
-            }
-            
         
             input:focus::-webkit-input-placeholder {
                 opacity: 0;

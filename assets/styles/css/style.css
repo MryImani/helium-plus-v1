@@ -1440,6 +1440,12 @@ body .register__form--label {
     font-size: 0.625rem;
   }
 }
+body .register__form--span {
+  color: #8593A6;
+  position: relative;
+  right: 1.5rem;
+  top: -2.5rem;
+}
 body .register__form--input {
   font-family: "Kalame_Regular";
   font-style: normal;
@@ -1459,8 +1465,11 @@ body .register__form--input {
     font-size: 0.8rem;
   }
 }
-body .register__form #inp__phone {
+body .register__form #inp__phone, body .register__form #inp__email {
   text-align: end;
+}
+body .register__form #inp__phone:focus + span, body .register__form #inp__email:focus + span {
+  opacity: 0;
 }
 body .register__form input:focus {
   outline: none;
@@ -1514,35 +1523,6 @@ body .register__form #inp__phone:-ms-input-placeholder {
 }
 body .register__form #inp__phone:-moz-placeholder {
   word-spacing: 14rem;
-}
-body .register__form input[type=email]::-webkit-input-placeholder {
-  word-spacing: 10rem;
-}
-@media only screen and (max-width: 900px) {
-  body .register__form input[type=email]::-webkit-input-placeholder {
-    word-spacing: 4rem;
-  }
-}
-@media only screen and (max-width: 400px) {
-  body .register__form input[type=email]::-webkit-input-placeholder {
-    font-size: 1rem;
-    word-spacing: 3rem;
-  }
-}
-@media only screen and (max-width: 350px) {
-  body .register__form input[type=email]::-webkit-input-placeholder {
-    font-size: 0.9rem;
-    word-spacing: 1rem;
-  }
-}
-body .register__form input[type=email]::-moz-placeholder {
-  word-spacing: 8.5rem;
-}
-body .register__form input[type=email]:-ms-input-placeholder {
-  word-spacing: 8.5rem;
-}
-body .register__form input[type=email]:-moz-placeholder {
-  word-spacing: 8.5rem;
 }
 body .register__form input:focus::-webkit-input-placeholder {
   opacity: 0;
