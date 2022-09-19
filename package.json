@@ -1,0 +1,15 @@
+{
+  "name": "helium-plus",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass ./assets/styles/sass/style.scss ./assets/styles/css/style.css --watch "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.52.1"
+  }
+}
